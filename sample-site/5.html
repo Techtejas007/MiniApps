@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Introduction to jquery</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function() {
+            $("button").click(function(){
+                $("#box1").fadeTo("slow", 0.25);
+                $("#box2").fadeTo("slow", 0.8);
+                $("#box3").fadeTo("slow", 0.15);
+                $("#box4").fadeTo("slow", 0.30);
+            }) ;          
+        });
+        
+    </script>
+    <style type="text/css">
+        button {background-color: black; color: white;height: 60px; border-radius: 1px;}    
+    </style>
+    
+</head>
+<body>
+<h1> Check out the boxes as they fade out!</h1>
+
+<button>Click to fade out boxes</button><br><br>
+    
+<div id="box1" style="width: 120px;height: 70px;background-color: #33c2f2;"></div>
+<div id="box2" style="width: 120px;height: 70px;background-color: #f26333;"></div>
+<div id="box3" style="width: 120px;height: 70px;background-color: #ce63f2;"></div>
+<div id="box4" style="width: 120px;height: 70px;background-color: #f01867;"></div>    
+    
+
+</body>    
+</html>

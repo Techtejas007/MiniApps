@@ -1,0 +1,35 @@
+p{
+    color: blue;
+    size: 30px;
+    
+
+}
+
+h1{
+    font-size: 60px;
+    color: black;
+    text-shadow: 5px black;
+    text-align: center;
+}
+
+#quote{
+
+    font-style: italic;
+}
+
+.para{
+    font-size: 25px;
+    color: brown;
+}
+
+body{
+    margin: 100px;
+    background-color: yellow;
+    border: 10px solid black;
+    
+}
+
+
+html{
+    background-color: cyan;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Introduction to jquery</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+                $(document).ready(function() {
+            
+                    $("#show").click(function() {
+                    $("#div").show("fast");
+            });
+            
+                    $("#Hide").click(function() {
+                    $("#div").hide(1000, "swing");
+            });
+            
+                    $("#Toggle").click(function() {
+                    $("#div").toggle("slow");
+            });
+            
+            
+        });
+        
+    </script>
+    <style type="text/css">
+        #div {
+            border: 1px solid gray;
+            font-size: 24pt;
+            padding-left: 10pt;
+            padding-right: 10pt;
+            height: 200px;
+            width: 300px;
+            background-color: purple;
+            color: black;
+            text-align: center;
+        }
+        
+        button {
+            margin: 5pt 5pt 0 0;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+<h1> JQUERY show and hide effects</h1>
+
+<div id="div">Div Box</div>
+    
+<button id="show" style="background-color: #0daade; width: 100px;">show</button>   
+<button id="Hide" style="background-color: red; width: 100px;">Hide</button>  
+<button id="Toggle" style="background-color: #c1c724; width: 100px;">Toggle</button>       
+
+</body>    
+</html>
